@@ -14,7 +14,7 @@ Meu portfólio é uma página web simples construída usando HTML, CSS e JavaScr
 
 ## Como Visualizar
 
-Você pode acessar o site online [clicando aqui](#) (insira o link do seu site).
+Você pode acessar o site online [clicando aqui](https://thalesjuan.netlify.app).
 
 ## Tecnologias Utilizadas
 
@@ -31,7 +31,6 @@ Se você deseja contribuir ou fazer melhorias neste projeto, sinta-se à vontade
 ## Contato
 
 - **Nome:** Thales Juan
-- **Telefone:** +55 79 99182-3698
 - **Email:** thalesjuand@gmail.com
 - **Redes Sociais:**
   - [Discord](https://discord.com/users/829877072079487066)
