@@ -1,4 +1,10 @@
-const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector(".nav");
+function typeWriter(element) {
+    const textoArray = element.innerHTML.split('');
+    element.innerHTML = ' ';
+    textoArray.forEach((letra, index) => {
+        setTimeout(() => element.innerHTML += letra, 100 * index);
+    });
+}
 
-hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+const frase = document.querySelector('h3');
+typeWriter(frase);

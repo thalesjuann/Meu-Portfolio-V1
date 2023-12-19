@@ -74,6 +74,23 @@ h3 {
     font-size: 28px;
 }
 
+.inicio h3::after {
+    content: "|";
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
 .inicio button {
     background-color: rgb(4, 156, 156);
     color: white;
@@ -130,15 +147,13 @@ h3 {
     color: rgb(4, 155, 155);
 }
 
-.tecnologias {
-    width: 100%;
+.tec {
     display: flex;
-    -webkit-box-pack: center;
+    gap: 150px;
+    text-align: center;
     justify-content: center;
-    -webkit-box-align: center;
     align-items: center;
-    gap: 125px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .skill {
@@ -239,16 +254,16 @@ abbr {
     transform: translateY(0);
 }
 
-.container .card .face.face1 .content{
+.container .card .face.face1 .conten{
     opacity: 0.2;
     transition: 0.5s;
 }
 
-.container .card:hover .face.face1 .content{
+.container .card:hover .face.face1 .conten{
     opacity: 1;
 }
 
-.container .card .face.face1 .content img{
+.container .card .face.face1 .conten img{
     max-width: 300px;
     height: 200px;
 }
@@ -269,20 +284,20 @@ abbr {
     transform: translateY(0);
 }
 
-.container .card .face.face2 .content h3{
+.container .card .face.face2 .conten h3{
     margin: 10px 0 0;
     color: #000000;
     text-align: center;
     font-size: 1.5em;
 }
-.container .card .face.face2 .content p{
+.container .card .face.face2 .conten p{
     margin: 0;
     padding: 0;
     color: black;
     text-align: justify;
 }
 
-.container .card .face.face2 .content a{
+.container .card .face.face2 .conten a{
     margin: 15px 0 0;
     display:  inline-block;
     text-decoration: none;
@@ -506,15 +521,476 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    ul {
+        display: none;
+    }
+    .inicio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
 
+    .inicio img {
+        margin-left: 5px;
+    }
+
+    .sobremim {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 150vh;
+    }
+
+    .sobremim img {
+        margin-left: 5px;
+    }
+
+    .sobremim h2 {
+        text-align: center;
+    }
+
+    .sobremim p {
+        max-width: 500px;
+    }
+
+    .habili {
+        height: 250vh;
+    }
+
+    .tec {
+        flex-direction: column;
+        gap: 70px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill img {
+        margin-left: 5px;
+    }
+
+    .projetos {
+        height: 170vh;
+    }
+
+    .projetos h2 {
+        margin-left: 5px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgp {
+        margin-left: 0.1px;
+    }
+
+    .contato {
+		padding: 50px;
+	}
+
+    .content {
+        margin-top: 65px;
+    }
+
+	.contain {
+		flex-direction: column;
+	}
+
+	.contain .contatoInfo, .contain .contatoForm {
+		width: 100%;
+	}
+
+	.contain {
+		padding: 50px 30px;
+	}
+
+    .box h3, p{
+        margin-left: 5px;
+    }
+
+    footer {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
 @media screen and (max-width: 428px) {
-    nav {
+    ul {
         display: none;
     }
 
     .logo {
-        font-size: 36px;
-        margin-left: -5px;
+        font-size: 30px;
+        margin-left: -10px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 120vh;
+    }
+
+    .inicio img {
+        margin-left: 5px;
+    }
+
+    .sobremim {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 190vh;
+    }
+
+    .sobremim img {
+        margin-left: 5px;
+    }
+
+    .sobremim h2 {
+        text-align: center;
+    }
+
+    .sobremim p {
+        max-width: 500px;
+    }
+
+    .habili {
+        height: 300vh;
+    }
+
+    .tec {
+        flex-direction: column;
+        gap: 70px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill img {
+        margin-left: 5px;
+    }
+
+    .projetos {
+        height: 200vh;
+    }
+
+    .projetos h2 {
+        margin-left: 5px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgp {
+        margin-left: 0.1px;
+    }
+
+    .contato {
+		padding: 50px;
+	}
+
+    .content {
+        margin-top: 65px;
+    }
+
+	.contain {
+		flex-direction: column;
+	}
+
+	.contain .contatoInfo, .contain .contatoForm {
+		width: 100%;
+	}
+
+	.contain {
+		padding: 50px 30px;
+	}
+
+    .box h3, p{
+        margin-left: 5px;
+    }
+
+    footer {
+        margin-left: -50px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #h1f {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    #pf, #copyright {
+        max-width: 500px;
+        text-align: center;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    ul {
+        display: none;
+    }
+
+    .logo {
+        font-size: 30px;
+        margin-left: -10px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 120vh;
+    }
+
+    .inicio img {
+        margin-left: 5px;
+    }
+
+    .sobremim {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 215vh;
+    }
+
+    .sobremim img {
+        margin-left: 5px;
+    }
+
+    .sobremim h2 {
+        text-align: center;
+    }
+
+    .sobremim p {
+        max-width: 500px;
+    }
+
+    .habili {
+        height: 310vh;
+    }
+
+    .tec {
+        flex-direction: column;
+        gap: 70px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill img {
+        margin-left: 5px;
+    }
+
+    .projetos {
+        height: 200vh;
+    }
+
+    .projetos h2 {
+        margin-left: 5px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgp {
+        margin-left: 0.1px;
+    }
+
+    .contato {
+		padding: 50px;
+	}
+
+    .content {
+        margin-top: 65px;
+    }
+
+	.contain {
+		flex-direction: column;
+	}
+
+	.contain .contatoInfo, .contain .contatoForm {
+		width: 100%;
+	}
+
+	.contain {
+		padding: 50px 30px;
+	}
+
+    .box h3, p{
+        margin-left: 5px;
+    }
+
+    footer {
+        margin-left: -50px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #h1f {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    #pf, #copyright {
+        max-width: 500px;
+        text-align: center;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    ul {
+        display: none;
+    }
+
+    .logo {
+        font-size: 30px;
+        margin-left: -10px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 200vh;
+    }
+
+    .inicio img {
+        margin-left: 5px;
+    }
+
+    .sobremim {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 370vh;
+    }
+
+    .sobremim img {
+        margin-left: 5px;
+    }
+
+    .sobremim h2 {
+        text-align: center;
+    }
+
+    .sobremim p {
+        max-width: 500px;
+    }
+
+    .habili {
+        height: 490vh;
+    }
+
+    .tec {
+        flex-direction: column;
+        gap: 70px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill img {
+        margin-left: 5px;
+    }
+
+    .projetos {
+        height: 350vh;
+    }
+
+    .projetos h2 {
+        margin-left: 5px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgp {
+        margin-left: 0.1px;
+    }
+
+    .contato {
+		padding: 50px;
+	}
+
+    .content {
+        margin-top: 65px;
+    }
+
+    .box {
+        margin-left: -35px;
+    }
+
+    .txt, .sci {
+        margin-left: -35px;
+    }
+
+	.contain {
+		flex-direction: column;
+	}
+
+	.contain .contatoInfo, .contain .contatoForm {
+		width: 100%;
+	}
+
+	.contain {
+		padding: 50px 30px;
+	}
+
+    .box h3, p{
+        margin-left: 5px;
+    }
+
+    footer {
+        margin-left: -50px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #h1f {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    #pf, #copyright {
+        max-width: 500px;
+        text-align: center;
+        margin-left: 50px;
     }
 }
