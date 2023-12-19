@@ -10,15 +10,16 @@
 
     <header>
         <a class="logo" href="#">Thales Juan</a>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicío</a></li>
-                <li><a href="#sobremim">Sobre Mim</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-            </ul>
+        <nav class="nav">
+          <button class="hamburger"></button>
+          <ul class="nav-list">
+            <li><a href="#inicio" class="nav-link">Inicío</a></li>
+            <li><a href="#sobremim" class="nav-link">Sobre Mim</a></li>
+            <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+            <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
     <main>
         <section id="inicio">
@@ -27,7 +28,7 @@
             <h4>Olá, Mundo!👋</h4>
             <h2>Eu me chamo <span>Thales Juan</span></h2>
             <h3>E sou um Desenvolvedor FullStack.</h3>
-            <a href="#contato"><button>Contato</button>
+            <button id="ctt"><a href="#contato">Contato</a></button>
         </div>
         <div class="img">
             <img src="assets/img/ghostt.jpg" alt="Perfil">
@@ -142,7 +143,7 @@
             </div>
         </section>
 
-        <section class="contato">
+        <section id="contato" class="contato">
             <div class="content">
                 <h2>Contato</h2>
             
